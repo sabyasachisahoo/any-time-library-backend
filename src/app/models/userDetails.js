@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const UserDetailSchema  = new Schema({
     username:{type:String,required:true},
     password:{type:String,required:true},
-    role:{type:String,enum:['USER','ADMIN'],default:'ADMIN'}
+    role:{type:String,enum:['USER','ADMIN'],default:'USER'}
 })
 
 const UserDetail = module.exports = mongoose.model('UserDetail',UserDetailSchema);
