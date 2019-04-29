@@ -45,3 +45,4 @@ module.exports.comparePassword = function(userPass,hash,callback) {
         callback(null,isMatch);
     })
 }
+

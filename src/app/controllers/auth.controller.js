@@ -85,6 +85,25 @@ exports.adminInfo = (req,res) => {
    
 }
 
+exports.updateUser = (req,res) =>{
+    authUser.findByIdAndUpdate(req.params.id,req.body, {new: true})
+    .then(()=>{
+        res.send("User updated successfully")
+    }).catch((error)=>{
+        console,log(error)
+    })
+}
+
+exports.deleteUser =(req,res) =>{
+    authUser.findByIdAndRemove(req.params.id)
+        .then(()=>{
+            res.send("User deleted") 
+        }).catch((error)=>{
+            console.log(error);
+        })
+}
+
+
 // var needsRole = function(role){
 //     return function(req,res,next){
 //         if(req.user && req.user.role === 'ADMIN'){

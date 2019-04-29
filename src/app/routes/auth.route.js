@@ -15,6 +15,13 @@ router.get('/profile/:username',passport.authenticate('jwt',{session:false}),aut
 
 router.get('/profile',passport.authenticate('jwt',{session:false}),authController.allProfileInfo);
 
+// remove issued book from list on return of book
+router.delete('/profile/:id',passport.authenticate('jwt',{session:false}),authController.deleteUser);
+
+// remove issued book from list on return of book
+router.put('/profile/:id',passport.authenticate('jwt',{session:false}),authController.updateUser);
+
+
 router.get('/admin',passport.authenticate('jwt',{session:false}),authController.adminInfo);
 
 // user logged in so show book details 
