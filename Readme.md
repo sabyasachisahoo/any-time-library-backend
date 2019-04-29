@@ -4,10 +4,10 @@ It has all rest end points which is required to run the Library application
 It has token based Auth for logged in user, used passport for Auth.
 
 ## Required 
-Node lastest version 
-npm lastest version 
-MongoDb need to to set up before running the app.
-Follow below links to install MongoDb & setup for appliction.
+Node latest version 
+npm latest version 
+Mongo DB need to set up before running the app. 
+Follow below links to install Mongo DB & setup for application.
 
 ## links
 https://medium.com/@LondonAppBrewery/how-to-download-install-mongodb-on-windows-4ee4b3493514
